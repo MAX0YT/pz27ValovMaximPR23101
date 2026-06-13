@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <!-- Внутренний цвет фона (белый, как на картинке) -->
+        <!-- Если нужен абсолютно прозрачный, замените #FFFFFF на #00000000 -->
+        <solid android:color="#00000000" />
+
+        <!-- Цвет и толщина рамки (бордюра) -->
+        <stroke
+            android:width="2dp"
+            android:color="#666666" />
+
+        <!-- Радиус скругления углов -->
+        <corners android:radius="8dp" />
+
+</shape>
