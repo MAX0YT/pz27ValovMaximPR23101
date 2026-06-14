@@ -36,10 +36,12 @@ android {
 }
 
 dependencies {
+    implementation("com.yandex.android:maps.mobile:4.4.0-lite")
     implementation(libs.activity.ktx)
     implementation(libs.appcompat)
     implementation(libs.constraintlayout)
     implementation(libs.material)
+    implementation(libs.play.services.maps)
     testImplementation(libs.junit)
     androidTestImplementation(libs.espresso.core)
     androidTestImplementation(libs.ext.junit)

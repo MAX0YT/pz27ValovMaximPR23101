@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -71,6 +72,19 @@ public class MainActivity extends AppCompatActivity {
 
         setupCardListeners();
         setupProfilePhotoPicker();
+
+        var walletInMenu = findViewById(R.id.wallet_menu_icon);
+        walletInMenu.setOnClickListener(v -> {
+            openWalletActivity();
+        });
+        var track = findViewById(R.id.track);
+        track.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, track_activity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     // ====================== КАРТОЧКИ ======================
@@ -142,7 +156,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, chats_activity.class);
         startActivity(intent);
     }
-
+    private void openWalletActivity() {
+        Intent intent = new Intent(this, wallet_activity.class);
+        startActivity(intent);
+    }
     // ====================== ВЫБОР ФОТО ======================
     private void setupProfilePhotoPicker() {
         pickImageLauncher = registerForActivityResult(

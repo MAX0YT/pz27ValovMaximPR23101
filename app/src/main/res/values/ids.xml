@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tvHeader" type="id" />
+    <item name="ivProfilePhoto" type="id" />
+    <item name="tvUserName" type="id" />
+    <item name="tvBalanceLabel" type="id" />
+    <item name="tvBalanceValue" type="id" />
+    <item name="ivHideBalance" type="id" />
+    <item name="cvTopUp" type="id" />
+    <item name="tvHistoryHeader" type="id" />
+    <item name="llTransactionList" type="id" />
+    <item name="tvTrans1Amount" type="id" />
+    <item name="tvTrans2Amount" type="id" />
+    <item name="llBottomNav" type="id" />
+    <item name="progressIndicator" type="id" />
+    <item name="tvRateRider" type="id" />
+    <item name="ratingBar" type="id" />
+    <item name="etFeedback" type="id" />
+    <item name="btnDone" type="id" />
+</resources>
